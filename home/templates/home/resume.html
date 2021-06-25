@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Young Jin Kim Resume</title>
+
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="Xiaoying Riley at 3rd Wave Media">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+	<!-- FontAwesome JS-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+	<!-- Theme CSS -->
+	<link id="theme-style" rel="stylesheet" href="{% static 'css/devresume.css' %}">
+
+</head>
+
+<body>
+
+	<div class="main-wrapper">
+		<div class="container px-3 px-lg-5">
+			<article class="resume-wrapper mx-auto theme-bg-light p-5 mb-5 my-5 shadow-lg">
+
+				<div class="resume-header">
+					<div class="row align-items-center">
+						<div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+							<h2 class="resume-name mb-0 text-uppercase">Young Jin Kim</h2>
+							<div class="resume-tagline mb-3 mb-md-0">Software Engineer</div>
+						</div><!--//resume-title-->
+						<div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+							<ul class="list-unstyled mb-0">
+								<li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg mr-2 "></i><a class="resume-link" href="tel:#">(360)356-8253</a></li>
+								<li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg mr-2"></i><a class="resume-link" href="mailto:#">kimyou1994@gmail.com</a></li>
+								<li class="mb-2"><i class="fas fa-globe fa-fw fa-lg mr-2"></i><a class="resume-link" href="#">www.young-j.kim</a></li>
+								<li class="mb-0"><i class="fas fa-map-marker-alt fa-fw fa-lg mr-2"></i>Vancouver, Washington</li>
+							</ul>
+						</div><!--//resume-contact-->
+					</div><!--//row-->
+
+				</div><!--//resume-header-->
+				<hr>
+				<div class="resume-intro py-3">
+					<div class="media flex-column flex-md-row align-items-center">
+						<img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto" src="{% static 'images/resume-image.png' %}" alt="image">
+						<div class="media-body text-left">
+							<p class="mb-0">I started my career as a python developer in a local company to develop an internal company application to support employees in their daily tasks. I enjoyed working in developing an app that gives a positive impact to the end user. My passion is focused in self-development and customer satisfaction. 
+								I push myself to the limit to achieve better result. With an emphasize on efficiency and user experience,  I develop on bullding applications that have positive impact.</p>
+						</div><!--//media-body-->
+					</div>
+				</div><!--//resume-intro-->
+				<hr>
+				<div class="resume-body">
+					<div class="row">
+						<div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
+							<section class="work-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">Work Experiences</h3>
+								<div class="item mb-3">
+									<div class="item-heading row align-items-center mb-2">
+										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Python Developer</h4>
+										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Rohner's Finishing System | Mar 2020 - May 2021</div>
+
+									</div>
+									<div class="item-content">
+										<p>Worked on a small team to produce custom software tools to meet specific company needs in automating processes and data sharing between multiple systems. Performed maintenance and small scale improvements to existing applications. Engaged in building new tools from scratch.</p>
+										<ul class="resume-list">
+											<li>Designed an user friendly UI incorporating custom built Kivy widgets to increase reusability of styles with various user screens. </li>
+											<li>Refactored and modeled database schema in a JSON formatted data for query efficiency.</li>
+											<li>Increased efficiency of agile product life cycle of company projects by migrating physical tasks into application functionalities.</li>
+										</ul>
+									</div>
+								</div><!--//item-->
+							</section><!--//work-section-->
+
+
+							<section class="project-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">Projects</h3>
+								<div class="item mb-3">
+									<div class="item-heading row align-items-center mb-2">
+										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Part Label Scanner</h4>
+										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Python</div>
+
+									</div>
+									<div class="item-content">
+										<p>Automated part label generate process for the company breakout team. Utilized canvas module and object attributes to automatically create/print individual part labels. Minimized in person interaction between departments and accelerated company product life cycle.</p>
+
+
+									</div>
+								</div><!--//item-->
+								<div class="item">
+									<div class="item-heading row align-items-center mb-2">
+										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Project Update Application</h4>
+										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Python, Linux</div>
+
+									</div>
+									<div class="item-content">
+										<p>Developed an app that automatically update live application. Utilized scp and ssh through subprocess to connect with server to replace currently running app with updated version. Facilitated update procedures by creating User Interface with few clicks to update version.</p>
+
+									</div>
+								</div><!--//item-->
+								<div class="item">
+									<div class="item-heading row align-items-center mb-2">
+										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">Salesforce Quote Auto Generator</h4>
+										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Visualforce, Javascript</div>
+
+									</div>
+									<div class="item-content">
+										<p>Developed a script that generates a quote template with salesforce API and a data from csv file. Enhanced the quote template visualization with visualforce and CSS. Saved company budget by 1,000 dollars per month by developing this script without upgrading edition.</p>
+
+									</div>
+								</div><!--//item-->
+								<div class="item mb-3">
+									<div class="item-heading row align-items-center mb-2">
+										<h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">User Notification</h4>
+										<div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">Python</div>
+
+									</div>
+									<div class="item-content">
+										<p>Utilized windows notification to notify company employees when new task has been assigned to them. Implmented application notificatier that notify users when they are using the app. Enhanced communication between dynamic cross functional teams.</p>
+
+
+									</div>
+								</div><!--//item-->
+							</section><!--//project-section-->
+						</div><!--//resume-main-->
+						<aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+							<section class="skills-section py-3">
+								<h3 class="text-uppercase resume-section-heading mb-4">Skills</h3>
+								<div class="item">
+									<h4 class="item-title">Technical</h4>
+									<ul class="list-unstyled resume-skills-list">
+										<li class="mb-2">Python/Django/PHP</li>
+										<li class="mb-2">Javascript/HTML/CSS<li>
+										<li class="mb-2">Java/C++/C#</li>
+										<li class="mb-2">Ember.js/Laravel/MVC</li>
+										<li class="mb-2">MySQL/PostgrSQL</li>
+										<li class="mb-2">Git/Agile/Jira/Object Oriented Design</li>
+									</ul>
+								</div><!--//item-->
+								<div class="item">
+									<h4 class="item-title">Professional</h4>
+									<ul class="list-unstyled resume-skills-list">
+										<li class="mb-2">Continuous Self Development</li>
+										<li class="mb-2">Team player<li>
+										<li class="mb-2">Strong problem solver</li>
+										<li>Good time management</li>
+									</ul>
+								</div><!--//item-->
+							</section><!--//skills-section-->
+									<section class="education-section py-3">
+										<h3 class="text-uppercase resume-section-heading mb-4">Education</h3>
+										<ul class="list-unstyled resume-education-list">
+											<li class="mb-3">
+												<div class="resume-degree font-weight-bold">BS in Computer Science</div>
+												<div class="resume-degree-org text-muted">University of Southern California</div>
+												<div class="resume-degree-time text-muted">2017 - 2019</div>
+											</li>
+										</ul>
+									</section><!--//education-section-->
+									<section class="education-section py-3">
+										<h3 class="text-uppercase resume-section-heading mb-4">Certificate</h3>
+										<ul class="list-unstyled resume-awards-list">
+											<li class="mb-3">
+												<div class="font-weight-bold">Coursera</div>
+												<div class="text-muted">Django for Everybody Specialization
+													<br>Crash Course on Python
+													<br>Algorithmic Toolbox</div>
+											</li>
+										</ul>
+									</section><!--//education-section-->
+									<section class="skills-section py-3">
+										<h3 class="text-uppercase resume-section-heading mb-4">Languages</h3>
+										<ul class="list-unstyled resume-lang-list">
+											<li class="mb-2">Korean <span class="text-muted">(Native)</span></li>
+											<li>English <span class="text-muted">(Professional)</span></li>
+										</ul>
+									</section><!--//certificates-section-->
+
+								</aside><!--//resume-aside-->
+							</div><!--//row-->
+						</div><!--//resume-body-->
+						<hr>
+						<div class="resume-footer text-center">
+							<ul class="resume-social-list list-inline mx-auto mb-0 d-inline-block text-muted">
+								<li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://github.com/kimyou1994"><i class="fab fa-github-square fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">https://github.com/kimyou1994</span></a></li>
+								<li class="list-inline-item mb-lg-0 mr-3"><a class="resume-link" href="https://www.linkedin.com/in/kimyou1994/"><i class="fab fa-linkedin fa-2x mr-2" data-fa-transform="down-4"></i><span class="d-none d-lg-inline-block text-muted">https://www.linkedin.com/in/kimyou1994/</span></a></li>
+							</ul>
+						</div><!--//resume-footer-->
+					</article>
+
+				</div><!--//container-->
+
+				<footer class="footer text-center py-4">
+					<!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+					<small class="copyright text-muted">Designed with <i class="fas fa-heart"></i> by <a class="theme-link" href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+				</footer>
+
+			</div><!--//main-wrapper-->
+
+
+</body>
+</html>
