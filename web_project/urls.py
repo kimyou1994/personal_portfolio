@@ -16,9 +16,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.views.generic.base import TemplateView
+from django.views.generic.base import RedirectView
+from django.contrib.staticfiles.storage import staticfiles_storage
 
 urlpatterns = [
     path('admin/', admin.site.urls), #admin access
     path('', TemplateView.as_view(template_name='home/main.html')), #main web page
-    path('resume/', TemplateView.as_view(template_name='home/resume.html')) #resume web page
+    path('resume/', TemplateView.as_view(template_name='home/resume.html')), #resume web page
+    path(
+        "favicon.ico",
+        RedirectView.as_view(url=staticfiles_storage.url("favicon.ico")),
+    )
 ]
